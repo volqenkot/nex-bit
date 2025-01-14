@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nex-bit.de | Hauptseite</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/fav.png" type="image/png">
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script/particles-js.js"></script>
+    <script src="script/script.js"></script>
+    <script src="index.html"></script>
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Startseite -->
+    <section id="home">
+        <div class="content">
+            <!-- Logo -->
+            <img class="logo" src="img/nexbit-full-logo.png" alt="Nexbit Logo">
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Slogan -->
+            <h1 class="slogan">Wir verbinden Ideen mit Technologie.</h1>
+
+            <!-- Service Text -->
+            <p class="service-text">
+                Laptop defekt oder keine Website? Bei uns gibt’s alles aus einer Hand. <br>
+                Melden Sie sich – per Anruf oder Nachricht. Wir kümmern uns um Ihre Technik, damit Sie sich auf das Wesentliche konzentrieren können!
+            </p>
+
+            <!-- Navigation Buttons -->
+            <div class="buttons">
+                <a href="services/services.html" class="btn">Dienstleistungen</a>
+                <a href="mailto:services@nex-bit.de?subject=Anfrage für eine Dienstleisung" class="btn">Kontakt</a>
+                <a href="about/about.html" class="btn">Über uns</a>
+                <a href="impress/impress.html" class="btn">Impressum</a>
+            </div>
+        </div>
+    </section>
+
+   
+</body>
+</html>
+
+<script>
+    // Überprüfen, ob die URL ".html" enthält
+    if (window.location.pathname.endsWith('.html')) {
+        // Neue URL ohne ".html" erstellen
+        const newPath = window.location.pathname.replace(/\.html$/, '');
+        // Umleitung auf die neue URL
+        window.history.replaceState(null, '', newPath);
+    }
+</script>
+
